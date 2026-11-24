@@ -20,4 +20,4 @@ Engine checks and browser observations establish behavior in this prototype. The
 A2 assignment text and A1 were read. Only prior discussion of lecture concepts was available; the full Weeks 1–4 slide set and tutor feedback were not supplied. Exact lecture titles, slide numbers and the student's own understanding must be checked before submission. The report does not invent slide citations or tutor feedback.
 
 ## Remaining student contribution
-Run the prototype personally, inspect the controls and explain the algorithm. Review the report's claims and references, record any changes made, verify the lecture mapping, and publish a public GitHub snapshot. These actions have not been represented as already completed.
+Run the prototype personally, inspect the controls and explain the algorithm. Review the report's claims and references, record any changes made, verify the lecture mapping, and review the published public GitHub snapshot. Student review has not been represented as already completed. The user created the public GitHub repository; Codex uploaded the project source and evidence.
