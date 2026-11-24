@@ -8,6 +8,6 @@
 
 **Done.** 15 engine tests pass, with 0 failures. Browser checked query, consent, explanation, withdrawal, hide, undo, empty result, clarification, export and reset. Actual output and captures are retained.
 
-**Next.** Student should run and review the prototype, provide Weeks 1–4 course slides/feedback for precise mapping, then inspect the published public source snapshot and the report links.
+**Next.** Student should run and review the prototype, explain the verified course mapping and report claims, record any personal revisions, and inspect the public source snapshot and report links. A1 rubric feedback and course sources have now been incorporated.
 
 **Budget left.** No fixed time/token budget was set for the project. No claim of remaining course time is made.

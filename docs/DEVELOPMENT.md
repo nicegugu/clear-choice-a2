@@ -17,7 +17,9 @@ Date: 24 November 2026. This records agent work observed in the current session,
 Engine checks and browser observations establish behavior in this prototype. They do not constitute a user study, a security audit, or evidence that people understand the explanations. Mobile QA at a 390px layout showed a stacked interface with document width equal to viewport width. Formal accessibility testing has not been performed.
 
 ## Course and reference status
-A2 assignment text and A1 were read. Only prior discussion of lecture concepts was available; the full Weeks 1–4 slide set and tutor feedback were not supplied. Exact lecture titles, slide numbers and the student's own understanding must be checked before submission. The report does not invent slide citations or tutor feedback.
+A2 assignment text, A1 and the user's two rubric screenshots were inspected. The feedback supports retaining A1's bounded direction; no individual written marker comments are visible. The report does not infer approval of the A2 prototype. See `FEEDBACK_RESPONSE.md`; private screenshots and numeric grades are not published.
+
+Weeks 1–4 original lecture PDFs were found in historical downloads. Relevant complete pages from Lectures 03, 04, 05, 06, 07 and 12 were checked and incorporated into the report with precise references. See `COURSE_MAPPING.md`. This resolves the previous missing-course-material item. The student's independent understanding and review remain pending.
 
 ## Remaining student contribution
-Run the prototype personally, inspect the controls and explain the algorithm. Review the report's claims and references, record any changes made, verify the lecture mapping, and review the published public GitHub snapshot. Student review has not been represented as already completed. The user created the public GitHub repository; Codex uploaded the project source and evidence.
+Run the prototype personally, inspect the controls and explain the algorithm. Review the report's claims and references, record any changes made, review the verified lecture mapping, and review the published public GitHub snapshot. Student review has not been represented as already completed. The user created the public GitHub repository; Codex uploaded the project source and evidence.

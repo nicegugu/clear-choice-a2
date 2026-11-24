@@ -1,6 +1,6 @@
 # Clear Choice
 
-README prose word count: 562 (excluding headings, code and setup commands; approximate whitespace count).
+README prose word count: 569 (excluding headings, code and setup commands; approximate whitespace count).
 
 An A2 prototype extending the A1 literature review on personalised advertising in AI conversations. It separates recognition of sponsorship, explanation of information use, and effective user control.
 
@@ -36,7 +36,7 @@ node --test tests/engine.test.mjs
 HTML/CSS, native JavaScript modules and browser memory only. The small parser recognises explicit budget/use-case phrases and listed control commands. Ranking and explanations share result metadata in `dist/engine.mjs`. Sponsorship determines eligibility for a separate placement; it never boosts ordinary products. The engine is inspectable and deterministic, not trained AI.
 
 ## Development record and assistance
-See [development decisions and checks](docs/DEVELOPMENT.md), [browser verification](docs/BROWSER_TESTS.md), [actual exported session](docs/browser-session.json), [test output](docs/automated-test-output.txt), [trace excerpt](docs/trace_excerpt.md) and [handover](docs/HANDOVER.md).
+See [development decisions and checks](docs/DEVELOPMENT.md), [verified course mapping](docs/COURSE_MAPPING.md), [response to A1 feedback](docs/FEEDBACK_RESPONSE.md), [browser verification](docs/BROWSER_TESTS.md), [actual exported session](docs/browser-session.json), [test output](docs/automated-test-output.txt), [trace excerpt](docs/trace_excerpt.md) and [handover](docs/HANDOVER.md).
 
 The user supplied A1, Lab 4 and Lab 5 and accepted the advertising-transparency project direction. Codex generated the implementation, tests, figures, report draft and documentation. Codex inspected the lab source, checked literature, reviewed test failures and ran browser checks. The student has not yet independently reviewed this generated submission; no student testing or authorship of generated code is claimed. Student review and any subsequent changes should be recorded before submission.
 

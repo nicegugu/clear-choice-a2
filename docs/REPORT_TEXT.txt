@@ -2,7 +2,7 @@ Clear Choice
 
 Transparent and controllable recommendations in a shopping assistant
 
-Abstract 181 words; main including headings 1005; total 1186.
+Abstract 181 words; main including headings 991; total 1172.
 
 
 Abstract
@@ -14,45 +14,45 @@ Conversational recommendations can conceal both commercial influence and the use
 Problem and project scope
 
 
-A1 identified three distinct difficulties: recognising sponsorship, understanding personalisation, and exercising effective control. Clear Choice develops that opportunity into a bounded headphone-shopping interaction. Tang et al. (2025) found difficulties detecting conversational advertisements and observed attempts to question or control them through dialogue. This motivates visible commercial labels alongside conversational controls; it does not establish that this prototype's design will improve understanding.
+A1 distinguished recognising sponsorship, understanding personalisation, and exercising effective control. Its rubric feedback supported the interaction problem, literature synthesis, bounded gap and proposed contribution. A2 therefore develops the same question through a headphone-shopping prototype. Tang et al. (2025) observed difficulties detecting conversational advertisements and attempts to question or control them through dialogue. This motivates visible labels and conversational controls, without establishing that this design improves understanding.
 
-The developed scope is one session, six fictional products, one maximum budget and one stated purpose. Implemented behavior includes parsing supported phrases, filtering, ranking, explaining, changing settings, undo and export. Sponsorship and open-ended AI dialogue are simulated. Live LLM interpretation, real advertising infrastructure and a comprehension study remain planned. This scope makes information use inspectable without claiming to reproduce a commercial platform.
+The scope is one session, six fictional products, one budget and one stated purpose. Implemented behavior includes supported-phrase parsing, filtering, ranking, explanations, settings, undo and export. Fictional sponsorship and bounded dialogue simulate an AI shopping context. Live LLM interpretation, advertising infrastructure and a comprehension study remain planned. Known inputs make information use inspectable.
 
 
 Design rationale
 
 
-First, ordinary recommendations and a sponsored placement occupy separate regions. Each sponsored card identifies its fictional sponsor; ordinary cards state that they are not sponsored. This applies visibility of system status: commercial influence is available at the point of recommendation. Separating the rankings also supports an accurate mental model. Turning advertising off removes its placement without changing ordinary ranking, rather than implying that payment makes a product objectively better.
+Ordinary recommendations and the sponsored placement occupy separate regions with explicit commercial labels. Lecture 03 treats automation and human control as separate dimensions and calls for visible consequences and global controls (University of Birmingham, 2026a, pp. 3–4, 8). Accordingly, automatic ranking operates alongside a switch that removes sponsored placements without altering ordinary results. This makes commercial influence visible and gives the user an effective boundary on the system’s action.
 
-Second, explanations disclose specific inputs and their effects. Kim et al. (2019) distinguish acceptable and objectionable information flows, qualifying the assumption that transparency should increase trust. Accordingly, the objective is informed choice. The explanation distinguishes the headphone category, the affordability constraint and optional purpose-based ranking. Lee et al. (2023) show that explanation needs vary with concerns about information collection and advertiser motives. Details therefore open on demand, while sponsorship remains visible without an extra click.
+Explanations disclose actual inputs and effects. Kim et al. (2019) qualify the assumption that transparency should increase trust; the goal here is informed choice. Lee et al. (2023) show that explanation needs vary with information-use concerns. Lecture 05’s mental-model and explanation-dosage concepts require useful evidence without overwhelming detail (University of Birmingham, 2026c, pp. 15–18). The interface therefore keeps sponsorship visible and opens category, budget, optional purpose and change controls on demand.
 
-Third, purpose use for advertising requires an explicit opt-in, separate from its use for ordinary shopping assistance. The budget always applies and is described as such. This prevents a privacy switch from silently allowing unaffordable recommendations. Ngong et al. (2025) motivate attention to contextual information use, although their intervention does not validate this advertising design. The prototype collects no inferred demographics or external browsing history and keeps session information in browser memory.
+Purpose-based ad ranking requires opt-in, separate from ordinary shopping assistance. The budget always applies, preventing withdrawal from silently allowing unaffordable recommendations. Ngong et al. (2025) motivate attention to contextual information use, although their intervention does not validate this advertising design. The prototype uses no inferred demographics or external browsing history. Distinguishing disabled use from deletion also supports the mental-model boundary: purpose remains available for ordinary recommendations, earlier messages remain visible, and downloaded evidence is not erased by reset.
 
-Fourth, control is coupled to execution and feedback. Disabling purpose use recomputes sponsored ranking and removes purpose from its explanation metadata. Hiding advertising removes the placement. This responds to Castleman and Korolova's (2024) finding that a tested advertising control did not significantly reduce the selected topics. Their result concerns Meta, not this prototype; it motivates checking effects rather than trusting reassuring messages. A revision indicator, current-data panel and undo operation apply feedback, user control and reversibility to make changes observable and repairable.
+Control is coupled to execution. Withdrawal recomputes sponsored ranking and removes purpose from its explanation metadata; hiding advertising removes the placement. Castleman and Korolova (2024) motivate checking actual effects because the studied Meta control did not significantly reduce the selected topics. Lecture 04 connects feedback to understanding what an action caused, while Lecture 06 distinguishes accidental slips from mistakes (University of Birmingham, 2026b, p. 18; 2026d, pp. 9, 13). Immediate result updates and a current-data panel expose consequences; undo repairs accidental changes.
 
-Finally, the interaction preserves correct context while repairing uncertainty. A new budget retains the current purpose. Multiple purposes, conflicting budgets and ambiguous control requests prompt clarification without changing state. This applies interaction repair: ask for the missing decision rather than restart the task or guess. When no product fits, the system retains the budget and presents an empty result. Avoiding an unsupported recommendation is an intentional response, not an execution failure.
+Repair preserves correct context. A new budget retains the current purpose; ambiguous controls, multiple purposes or conflicting budgets prompt clarification without mutation. Lecture 07 specifies clarify, confirm, correct and decline turns (University of Birmingham, 2026e, pp. 4, 11–12). The prototype offers concrete control phrases and supported use cases, rather than merely asking for clearer input. When nothing fits, it states the limit and retains the budget, returning control to the user.
 
-The controls deliberately distinguish stopping a use from deleting information. Withdrawing advertising permission leaves the stated purpose available for ordinary recommendations, and earlier conversation messages remain visible. Reset clears the current session, while an already downloaded evidence file remains on the device. Describing these boundaries prevents a misleading mental model of deletion. A stronger deletion workflow would require its own design and verification rather than a reassuring label.
+These choices make the intended mental model testable: users should predict that disabling advertising removes sponsored placements, while withdrawing purpose use changes only optional sponsored personalisation. Keeping affordability separate avoids conflating “do not target me using commuting” with “ignore my maximum price”. The explanation also identifies fixed campaign priority as a remaining selection factor. Its presence acknowledges that a product can remain sponsored after personalisation is disabled; withdrawal is not promised to remove all commercial influence. The separate hide control provides that stronger action.
 
 
 System and illustrated interaction
 
 
-Figure 1 separates the implemented browser pipeline from simulated commercial data and planned model interpretation. A small rule-based parser converts supported phrases into events; validated state feeds two ranking paths. Prices above budget are excluded. Ordinary ranking rewards purpose matches and then battery life. Sponsored ranking uses purpose only when enabled, followed by fixed campaign priority. Explanations use the same result metadata, preventing a separate generator from inventing reasons. There is no trained-model inference or autonomous tool loop.
+Figure 1 separates the implemented browser pipeline, simulated commercial data and planned model interpretation. A rule-based parser converts supported phrases into validated events. Both ranking paths exclude prices above budget. Ordinary ranking rewards purpose matches, then battery life; sponsored ranking uses purpose only when enabled, then campaign priority. Lecture 12 distinguishes execution results from generated claims (University of Birmingham, 2026f, pp. 5, 13–14). Explanations therefore use actual result metadata. There is no trained-model inference or autonomous tool loop.
 
-The storyboards show three developed interactions: recognising and inspecting a recommendation, withdrawing data use, and recovering from an empty result. They illustrate actual browser-checked states. For a commuting request under £100, enabling purpose use changes the sponsor selection from Aster Lite to Metro Quiet; withdrawing it restores Aster Lite. This visible change is illustrative evidence, while input-exclusion tests check the underlying rule.
+The three storyboards show recognition and inspection, withdrawal, and recovery from empty results. They depict browser-checked states. Under a £100 commuting request, enabling purpose use changes the sponsored product from Aster Lite to Metro Quiet; withdrawal restores Aster Lite. A changed product alone would not prove input exclusion, so engine tests separately check that disabled purpose cannot affect sponsored scores or explanation inputs.
 
 
 Development evidence and evaluation
 
 
-Lab 4 informed provenance display, explicit control and refusal patterns. The A2 implementation is newly generated JavaScript; the lab's Python application and model mocks were not copied. Lab 5 supplied development methods: bounded tasks, repository instructions, a reusable verification skill, tests, trace and handover. Its starter remains separate and is not represented as an A2 feature. The user accepted the project direction; Codex authored the implementation, tests and report draft. Independent student review is still required.
+Lab 4 informed provenance display, control and refusal patterns; its Python application and model mocks were not copied. Lab 5 informed bounded tasks, project instructions, a reusable verification skill, tests, trace and handover. Its separate starter is development-method evidence, not an A2 feature. The user accepted the topic and created the public repository. Codex authored the implementation, tests and report draft; independent student review remains necessary.
 
-Fifteen engine tests passed. They cover opt-in and withdrawal, explanation-input consistency, invariant ordinary results, ambiguous requests, and a budget sweep from £1 to £1,000. An initial failure came from a test fixture that modified ordinary products while testing sponsored priorities; correcting that fixture retained the assertion. Browser checks confirmed consent changes, explanation, withdrawal, hiding, undo, empty results, clarification, export and reset. These observations and the actual session export are retained in the development record.
+Fifteen engine tests passed, covering opt-in, withdrawal, explanation consistency, ordinary-ranking invariance, ambiguous requests and budgets from £1 to £1,000. An initial failure came from a fixture that modified ordinary products while testing sponsored priorities; correcting the fixture retained the assertion. Browser checks confirmed consent, explanation, withdrawal, hiding, undo, empty results, clarification, export and reset. Actual outputs and a session export are retained in the development record.
 
-The main limitation is that deterministic consistency does not establish human comprehension. No participant study or improvement in trust is claimed. Future evaluation should compare label-only and input-specific explanations, ask users which information affected selection, and check whether they can enact their preferred data-use settings. Completion time and effort should be measured alongside accuracy. The planned live-model extension would need separate evaluation of extraction errors and faithful explanations before replacing the bounded parser.
+These checks establish deterministic behavior, not human comprehension. No participant study or increased trust is claimed. Future evaluation should compare label-only and input-specific explanations, ask which information affected selection, and check whether users can enact their preferred settings. Accuracy, completion time and effort should be measured together. This preserves A1’s bounded opportunity without presenting the prototype as an experimental answer to it.
 
-A significant scope compromise is the absence of a live language model. A fluent shopping assistant could accept more varied requests, but its explanations might not faithfully describe targeting. The bounded parser and shared execution metadata prioritise inspectability for the A1 question. This version can support a walkthrough of control behavior, but cannot answer whether the same interface remains understandable in a long, unpredictable shopping conversation.
+The absence of a live LLM is a scope compromise. A fluent assistant could accept more varied requests, but a separate explanation generator might invent targeting reasons. Bounded rules and shared metadata prioritise inspectability. A live-model extension would need checks for extraction errors, unauthorised state changes and faithful explanations. This version supports a walkthrough of short interactions; it cannot establish understanding during long, unpredictable shopping conversations.
 
 
 References
@@ -68,4 +68,16 @@ Ngong, I. C., Kadhe, S. R., Wang, H., Murugesan, K., Weisz, J. D., Dhurandhar, A
 
 Tang, B. J., Sun, K., Curran, N. T., Schaub, F., & Shin, K. G. (2025). Ads that talk back: Implications and perceptions of injecting personalized advertising into LLM chatbots. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 9(4), Article 213. https://doi.org/10.1145/3770640
 
-University of Birmingham. (2026). Intelligent Interactive Systems Lab 4 and Week 5 lab materials [Course materials supplied by the student].
+University of Birmingham. (2026a). Human-centred intelligent interaction and the shape of the module (Week 1, Lecture 03) [Lecture slides].
+
+University of Birmingham. (2026b). Perception, attention and feedback (Week 2, Lecture 04) [Lecture slides].
+
+University of Birmingham. (2026c). Memory, mental models and cognitive load (Week 2, Lecture 05) [Lecture slides].
+
+University of Birmingham. (2026d). Action, error, agency and decision (Week 2, Lecture 06) [Lecture slides].
+
+University of Birmingham. (2026e). Conversational interfaces (Week 3, Lecture 07) [Lecture slides].
+
+University of Birmingham. (2026f). Tools, connectors and the boundary (Week 4, Lecture 12) [Lecture slides].
+
+University of Birmingham. (2026g). Intelligent Interactive Systems Lab 4 and Week 5 lab materials [Course materials supplied by the student].

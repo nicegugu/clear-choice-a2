@@ -10,4 +10,4 @@ The report builds on the student's supplied A1. The following primary-source rec
 
 Course evidence: uploaded Lab4_Ready_To_Test.zip, uploaded W05_LAB05_starter.zip, and the full Week 5 lab/A2 assignment text retrieved from the referenced chat. No student API key, original lab runtime log, or personal A1 document is copied into the public-source candidate.
 
-Weeks 1–4 slides and tutor feedback were not available in full. Course concept mapping remains a student verification item; no exact lecture titles, slide numbers or feedback quotes were invented.
+Update: original Weeks 1–4 lecture PDFs were subsequently located in historical downloads. Relevant complete pages were verified; see COURSE_MAPPING.md. The two supplied A1 rubric screenshots were also inspected; see FEEDBACK_RESPONSE.md. No individual written marker comments were visible. Full course decks, private screenshots and numeric grades are not published.
