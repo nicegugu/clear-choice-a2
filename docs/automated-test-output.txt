@@ -1,0 +1,23 @@
+✔ no ad personalisation before explicit enable (2.094333ms)
+✔ explicit purpose consent changes sponsored selection (0.410292ms)
+✔ withdrawal removes purpose from execution metadata and explanation (0.3905ms)
+✔ ad ranking independent of purpose when consent is off (0.101375ms)
+✔ hide ads removes all placements without changing ordinary ranking (0.083166ms)
+✔ budget is a hard cap for every result at every supported integer budget (9.219875ms)
+✔ no match preserves budget and returns empty results (0.447084ms)
+✔ ambiguous purpose does not mutate state (0.067708ms)
+✔ conflicting budgets ask rather than choose (0.04375ms)
+✔ ambiguous control never changes settings (0.093625ms)
+✔ unknown domain asks for supported scope (0.047875ms)
+✔ sponsor priority cannot alter ordinary ordering (13.934833ms)
+✔ explanation exactly lists the recorded ranking inputs (0.127542ms)
+✔ invalid control and unsupported state inputs are rejected (0.122917ms)
+✔ successive corrections retain the unedited shopping constraint (0.031084ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 76.98125

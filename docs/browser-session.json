@@ -1,0 +1,573 @@
+{
+  "prototype": "Clear Choice v1",
+  "mode": "rule-based; fictional catalogue and sponsorship",
+  "events": [
+    {
+      "sequence": 1,
+      "type": "change",
+      "detail": {
+        "event": {
+          "kind": "query",
+          "budget": 100,
+          "purpose": "commute"
+        },
+        "feedback": "Showing headphones up to £100 for commute. Your purpose is not used for ads."
+      },
+      "state": {
+        "budget": 100,
+        "purpose": "commute",
+        "hasQuery": true,
+        "ads": true,
+        "usePurposeForAds": false,
+        "revision": 1
+      },
+      "results": {
+        "organic": [
+          {
+            "id": "harbour",
+            "name": "Harbour Studio",
+            "price": 79,
+            "battery": 38,
+            "anc": true,
+            "purposes": [
+              "study",
+              "commute"
+            ],
+            "sponsor": null,
+            "colour": "#4665b5",
+            "score": 10.38,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": true
+          },
+          {
+            "id": "field",
+            "name": "Field Runner",
+            "price": 65,
+            "battery": 24,
+            "anc": false,
+            "purposes": [
+              "exercise"
+            ],
+            "sponsor": null,
+            "colour": "#338471",
+            "score": 0.24,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": false
+          }
+        ],
+        "sponsored": [
+          {
+            "id": "aster",
+            "name": "Aster Lite",
+            "price": 59,
+            "battery": 30,
+            "anc": false,
+            "purposes": [
+              "general"
+            ],
+            "sponsor": "Aster Audio",
+            "colour": "#b17742",
+            "priority": 3,
+            "score": 0.3,
+            "usedFields": [
+              "category",
+              "budget"
+            ],
+            "matchedPurpose": false
+          }
+        ],
+        "revision": 1
+      }
+    },
+    {
+      "sequence": 2,
+      "type": "change",
+      "detail": {
+        "event": {
+          "kind": "control",
+          "field": "usePurposeForAds",
+          "value": true
+        },
+        "feedback": "Your stated purpose is now allowed in ad ranking. It will only be used while sponsored recommendations are on."
+      },
+      "state": {
+        "budget": 100,
+        "purpose": "commute",
+        "hasQuery": true,
+        "ads": true,
+        "usePurposeForAds": true,
+        "revision": 2
+      },
+      "results": {
+        "organic": [
+          {
+            "id": "harbour",
+            "name": "Harbour Studio",
+            "price": 79,
+            "battery": 38,
+            "anc": true,
+            "purposes": [
+              "study",
+              "commute"
+            ],
+            "sponsor": null,
+            "colour": "#4665b5",
+            "score": 10.38,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": true
+          },
+          {
+            "id": "field",
+            "name": "Field Runner",
+            "price": 65,
+            "battery": 24,
+            "anc": false,
+            "purposes": [
+              "exercise"
+            ],
+            "sponsor": null,
+            "colour": "#338471",
+            "score": 0.24,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": false
+          }
+        ],
+        "sponsored": [
+          {
+            "id": "metro",
+            "name": "Metro Quiet",
+            "price": 89,
+            "battery": 40,
+            "anc": true,
+            "purposes": [
+              "commute",
+              "study"
+            ],
+            "sponsor": "Metro Audio",
+            "colour": "#4a67b5",
+            "priority": 2,
+            "score": 10.2,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": true
+          }
+        ],
+        "revision": 2
+      }
+    },
+    {
+      "sequence": 3,
+      "type": "explanation",
+      "detail": {
+        "product": "metro",
+        "explanation": {
+          "title": "Why this sponsored recommendation?",
+          "commercial": "Metro Audio has a fictional sponsorship agreement. That makes this product eligible for the sponsored slot; it does not improve its ordinary ranking.",
+          "inputs": [
+            {
+              "field": "category",
+              "label": "Headphones",
+              "source": "The supported product category",
+              "effect": "Limits the catalogue to headphones."
+            },
+            {
+              "field": "budget",
+              "label": "Maximum £100",
+              "source": "Your visible shopping budget",
+              "effect": "Excludes products above your maximum. This limit always applies, including to ads."
+            },
+            {
+              "field": "purpose",
+              "label": "commute",
+              "source": "Your stated use case in this session",
+              "effect": "Adds 10 ranking points to matching sponsored products."
+            }
+          ],
+          "tieBreak": "Then fixed demo campaign priority; no auction or real payment.",
+          "purposeUsed": true,
+          "revision": 2
+        }
+      },
+      "state": {
+        "budget": 100,
+        "purpose": "commute",
+        "hasQuery": true,
+        "ads": true,
+        "usePurposeForAds": true,
+        "revision": 2
+      },
+      "results": {
+        "organic": [
+          {
+            "id": "harbour",
+            "name": "Harbour Studio",
+            "price": 79,
+            "battery": 38,
+            "anc": true,
+            "purposes": [
+              "study",
+              "commute"
+            ],
+            "sponsor": null,
+            "colour": "#4665b5",
+            "score": 10.38,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": true
+          },
+          {
+            "id": "field",
+            "name": "Field Runner",
+            "price": 65,
+            "battery": 24,
+            "anc": false,
+            "purposes": [
+              "exercise"
+            ],
+            "sponsor": null,
+            "colour": "#338471",
+            "score": 0.24,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": false
+          }
+        ],
+        "sponsored": [
+          {
+            "id": "metro",
+            "name": "Metro Quiet",
+            "price": 89,
+            "battery": 40,
+            "anc": true,
+            "purposes": [
+              "commute",
+              "study"
+            ],
+            "sponsor": "Metro Audio",
+            "colour": "#4a67b5",
+            "priority": 2,
+            "score": 10.2,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": true
+          }
+        ],
+        "revision": 2
+      }
+    },
+    {
+      "sequence": 4,
+      "type": "change",
+      "detail": {
+        "event": {
+          "kind": "control",
+          "field": "usePurposeForAds",
+          "value": false
+        },
+        "feedback": "Your purpose is no longer used for ads. The sponsored selection has been recomputed."
+      },
+      "state": {
+        "budget": 100,
+        "purpose": "commute",
+        "hasQuery": true,
+        "ads": true,
+        "usePurposeForAds": false,
+        "revision": 3
+      },
+      "results": {
+        "organic": [
+          {
+            "id": "harbour",
+            "name": "Harbour Studio",
+            "price": 79,
+            "battery": 38,
+            "anc": true,
+            "purposes": [
+              "study",
+              "commute"
+            ],
+            "sponsor": null,
+            "colour": "#4665b5",
+            "score": 10.38,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": true
+          },
+          {
+            "id": "field",
+            "name": "Field Runner",
+            "price": 65,
+            "battery": 24,
+            "anc": false,
+            "purposes": [
+              "exercise"
+            ],
+            "sponsor": null,
+            "colour": "#338471",
+            "score": 0.24,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": false
+          }
+        ],
+        "sponsored": [
+          {
+            "id": "aster",
+            "name": "Aster Lite",
+            "price": 59,
+            "battery": 30,
+            "anc": false,
+            "purposes": [
+              "general"
+            ],
+            "sponsor": "Aster Audio",
+            "colour": "#b17742",
+            "priority": 3,
+            "score": 0.3,
+            "usedFields": [
+              "category",
+              "budget"
+            ],
+            "matchedPurpose": false
+          }
+        ],
+        "revision": 3
+      }
+    },
+    {
+      "sequence": 5,
+      "type": "change",
+      "detail": {
+        "event": {
+          "kind": "control",
+          "field": "ads",
+          "value": false
+        },
+        "feedback": "Sponsored recommendations are off. Ordinary recommendations are unchanged."
+      },
+      "state": {
+        "budget": 100,
+        "purpose": "commute",
+        "hasQuery": true,
+        "ads": false,
+        "usePurposeForAds": false,
+        "revision": 4
+      },
+      "results": {
+        "organic": [
+          {
+            "id": "harbour",
+            "name": "Harbour Studio",
+            "price": 79,
+            "battery": 38,
+            "anc": true,
+            "purposes": [
+              "study",
+              "commute"
+            ],
+            "sponsor": null,
+            "colour": "#4665b5",
+            "score": 10.38,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": true
+          },
+          {
+            "id": "field",
+            "name": "Field Runner",
+            "price": 65,
+            "battery": 24,
+            "anc": false,
+            "purposes": [
+              "exercise"
+            ],
+            "sponsor": null,
+            "colour": "#338471",
+            "score": 0.24,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": false
+          }
+        ],
+        "sponsored": [],
+        "revision": 4
+      }
+    },
+    {
+      "sequence": 6,
+      "type": "undo",
+      "detail": {},
+      "state": {
+        "budget": 100,
+        "purpose": "commute",
+        "hasQuery": true,
+        "ads": true,
+        "usePurposeForAds": false,
+        "revision": 5
+      },
+      "results": {
+        "organic": [
+          {
+            "id": "harbour",
+            "name": "Harbour Studio",
+            "price": 79,
+            "battery": 38,
+            "anc": true,
+            "purposes": [
+              "study",
+              "commute"
+            ],
+            "sponsor": null,
+            "colour": "#4665b5",
+            "score": 10.38,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": true
+          },
+          {
+            "id": "field",
+            "name": "Field Runner",
+            "price": 65,
+            "battery": 24,
+            "anc": false,
+            "purposes": [
+              "exercise"
+            ],
+            "sponsor": null,
+            "colour": "#338471",
+            "score": 0.24,
+            "usedFields": [
+              "category",
+              "budget",
+              "purpose"
+            ],
+            "matchedPurpose": false
+          }
+        ],
+        "sponsored": [
+          {
+            "id": "aster",
+            "name": "Aster Lite",
+            "price": 59,
+            "battery": 30,
+            "anc": false,
+            "purposes": [
+              "general"
+            ],
+            "sponsor": "Aster Audio",
+            "colour": "#b17742",
+            "priority": 3,
+            "score": 0.3,
+            "usedFields": [
+              "category",
+              "budget"
+            ],
+            "matchedPurpose": false
+          }
+        ],
+        "revision": 5
+      }
+    },
+    {
+      "sequence": 7,
+      "type": "change",
+      "detail": {
+        "event": {
+          "kind": "query",
+          "budget": 20
+        },
+        "feedback": "Showing headphones up to £20 for commute. Your purpose is not used for ads."
+      },
+      "state": {
+        "budget": 20,
+        "purpose": "commute",
+        "hasQuery": true,
+        "ads": true,
+        "usePurposeForAds": false,
+        "revision": 6
+      },
+      "results": {
+        "organic": [],
+        "sponsored": [],
+        "revision": 6
+      }
+    },
+    {
+      "sequence": 8,
+      "type": "clarification",
+      "detail": {
+        "request": "Stop that",
+        "message": "Which change do you want? Use “Hide sponsored recommendations” or “Do not use my purpose for ads”. No settings changed."
+      },
+      "state": {
+        "budget": 20,
+        "purpose": "commute",
+        "hasQuery": true,
+        "ads": true,
+        "usePurposeForAds": false,
+        "revision": 6
+      },
+      "results": {
+        "organic": [],
+        "sponsored": [],
+        "revision": 6
+      }
+    }
+  ],
+  "currentState": {
+    "budget": 20,
+    "purpose": "commute",
+    "hasQuery": true,
+    "ads": true,
+    "usePurposeForAds": false,
+    "revision": 6
+  },
+  "currentResults": {
+    "organic": [],
+    "sponsored": [],
+    "revision": 6
+  }
+}
