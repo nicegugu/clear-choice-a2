@@ -31,7 +31,6 @@
     {
       "heading": "Development evidence and evaluation",
       "paragraphs": [
-        "Lab 4 informed provenance display, control and refusal patterns. Lab 5 informed bounded tasks, project instructions, a reusable verification skill, tests, trace and handover.",
         "Fifteen engine tests passed, covering opt-in, withdrawal, explanation consistency, ordinary-ranking invariance, ambiguous requests and budgets from £1 to £1,000. An initial failure came from a fixture that modified ordinary products while testing sponsored priorities; correcting the fixture retained the assertion. Browser checks confirmed consent, explanation, withdrawal, hiding, undo, empty results, clarification, export and reset. Actual outputs and a session export are retained in the development record.",
         "These checks establish deterministic behavior, not human comprehension. No participant study or increased trust is claimed. Future evaluation should compare label-only and input-specific explanations, ask which information affected selection, and check whether users can enact their preferred settings. Accuracy, completion time and effort should be measured together. This preserves A1’s bounded opportunity without presenting the prototype as an experimental answer to it.",
         "The absence of a live LLM is a scope compromise. A fluent assistant could accept more varied requests, but a separate explanation generator might invent targeting reasons. Bounded rules and shared metadata prioritise inspectability. A live-model extension would need checks for extraction errors, unauthorised state changes and faithful explanations. This version supports a walkthrough of short interactions; it cannot establish understanding during long, unpredictable shopping conversations."
@@ -49,7 +48,6 @@
     "University of Birmingham. (2026c). Memory, mental models and cognitive load (Week 2, Lecture 05) [Lecture slides].",
     "University of Birmingham. (2026d). Action, error, agency and decision (Week 2, Lecture 06) [Lecture slides].",
     "University of Birmingham. (2026e). Conversational interfaces (Week 3, Lecture 07) [Lecture slides].",
-    "University of Birmingham. (2026f). Tools, connectors and the boundary (Week 4, Lecture 12) [Lecture slides].",
-    "University of Birmingham. (2026g). Intelligent Interactive Systems Lab 4 and Week 5 lab materials [Course materials supplied by the student]."
+    "University of Birmingham. (2026f). Tools, connectors and the boundary (Week 4, Lecture 12) [Lecture slides]."
   ]
 }

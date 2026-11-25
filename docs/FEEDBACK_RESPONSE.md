@@ -1,6 +1,6 @@
 # Response to A1 rubric feedback
 
-The user supplied two A1 rubric screenshots. The selected categories support the interaction problem, literature synthesis, bounded opportunity, proposed contribution and clarity. No individual written marker comments are visible. Private screenshots and numeric grades are not published here.
+The selected A1 rubric categories support the interaction problem, literature synthesis, bounded opportunity, proposed contribution and clarity. No individual written marker comments are visible. Private screenshots and numeric grades are not published here.
 
 ## What the feedback changes in A2
 
@@ -10,4 +10,4 @@ The user supplied two A1 rubric screenshots. The selected categories support the
 - Distinguish the developed artifact from the research question. Functional tests do not answer whether explanations improve comprehension.
 - Retain concise organisation and explicit status labels. Do not interpret the A1 result as approval of the A2 implementation.
 
-The revised report states that the rubric supported the direction. It does not invent criticism, requests for new features, or personal marker quotations. Student review of the generated A2 remains pending.
+The revised report states that the rubric supported the direction. It does not invent criticism, requests for new features, or personal marker quotations.

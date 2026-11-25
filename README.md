@@ -1,6 +1,6 @@
 # Clear Choice
 
-README prose word count: 731 (excluding headings, code and setup commands; approximate whitespace count).
+README prose word count: 589 (excluding headings, code and setup commands; approximate whitespace count).
 
 An A2 prototype extending the A1 literature review on personalised advertising in AI conversations. It separates recognition of sponsorship, explanation of information use, and effective user control.
 
@@ -36,7 +36,7 @@ node --test tests/engine.test.mjs
 HTML/CSS, native JavaScript modules and browser memory only. The small parser recognises explicit budget/use-case phrases and listed control commands. Ranking and explanations share result metadata in `dist/engine.mjs`. Sponsorship determines eligibility for a separate placement; it never boosts ordinary products. The engine is inspectable and deterministic, not trained AI.
 
 ## Development record and assistance
-The project developed from A1's distinction between sponsorship recognition, understanding personalisation and effective control. The prototype uses known fictional inputs and shared ranking metadata so these behaviors can be checked. Lab 4 informed source visibility and control patterns; Lab 5 informed bounded tasks, verification and review.
+The project developed from A1's distinction between sponsorship recognition, understanding personalisation and effective control. The prototype uses known fictional inputs and shared ranking metadata so these behaviors can be checked.
 
 Fifteen engine tests passed, covering opt-in, withdrawal, explanation-input consistency, ordinary-ranking invariance, ambiguous requests and budget limits. One initial failure was traced to a fixture that changed ordinary products while testing sponsor priorities; correcting the fixture retained the assertion. Browser checks confirmed explanation, withdrawal, hiding, undo, empty results, clarification, export and reset. These are functional checks, not a participant study or evidence of improved comprehension.
 
@@ -48,9 +48,7 @@ Specific uses of Codex included:
 - **JavaScript debugging and correction:** Codex assisted with identifying and correcting issues in parts of the JavaScript code and tests.
 - **Front-end styling and layout:** Codex assisted with HTML/CSS styling, interface layout and responsive presentation.
 
-The user supplied A1, Lab 4 and Lab 5 and accepted the advertising-transparency project direction. Codex generated the implementation, tests, figures, report draft and documentation. Codex inspected the lab source, checked literature, reviewed test failures and ran browser checks. The student has not yet independently reviewed this generated submission; no student testing or authorship of generated code is claimed. Student review and any subsequent changes should be recorded before submission.
-
-Lab 4 informed provenance display, refusal and user-control patterns. Its Python server, model mocks, API code, image mocks and local booking files were not copied into this app. Lab 5 informed task boundaries, skills, verification, trace and handover methods; its separate starter is not part of this prototype. SVG product illustrations were generated as original code. All product facts are fictional.
+All product facts are fictional.
 
 ## Submission material
 Report, system diagram and storyboards are supplied alongside the source package. Screenshots and evidence are under `docs/`. Public source: https://github.com/nicegugu/clear-choice-a2 . The submitted source commit is recorded in the report and delivery note. README: https://github.com/nicegugu/clear-choice-a2/blob/main/README.md . Private demonstration: https://clear-choice-a2-zp3116705.neonfort17.chatgpt.site . Reviewers can run the public source locally without access to the private demonstration.

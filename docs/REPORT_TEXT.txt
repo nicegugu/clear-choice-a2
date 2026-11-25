@@ -2,7 +2,7 @@ Clear Choice
 
 Transparent and controllable recommendations in a shopping assistant
 
-Abstract 181 words; main including headings 949; total 1130.
+Abstract 181 words; main including headings 925; total 1106.
 
 
 Abstract
@@ -46,8 +46,6 @@ The three storyboards show recognition and inspection, withdrawal, and recovery 
 Development evidence and evaluation
 
 
-Lab 4 informed provenance display, control and refusal patterns. Lab 5 informed bounded tasks, project instructions, a reusable verification skill, tests, trace and handover.
-
 Fifteen engine tests passed, covering opt-in, withdrawal, explanation consistency, ordinary-ranking invariance, ambiguous requests and budgets from £1 to £1,000. An initial failure came from a fixture that modified ordinary products while testing sponsored priorities; correcting the fixture retained the assertion. Browser checks confirmed consent, explanation, withdrawal, hiding, undo, empty results, clarification, export and reset. Actual outputs and a session export are retained in the development record.
 
 These checks establish deterministic behavior, not human comprehension. No participant study or increased trust is claimed. Future evaluation should compare label-only and input-specific explanations, ask which information affected selection, and check whether users can enact their preferred settings. Accuracy, completion time and effort should be measured together. This preserves A1’s bounded opportunity without presenting the prototype as an experimental answer to it.
@@ -79,5 +77,3 @@ University of Birmingham. (2026d). Action, error, agency and decision (Week 2, L
 University of Birmingham. (2026e). Conversational interfaces (Week 3, Lecture 07) [Lecture slides].
 
 University of Birmingham. (2026f). Tools, connectors and the boundary (Week 4, Lecture 12) [Lecture slides].
-
-University of Birmingham. (2026g). Intelligent Interactive Systems Lab 4 and Week 5 lab materials [Course materials supplied by the student].

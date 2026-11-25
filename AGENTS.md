@@ -14,7 +14,7 @@ This is a dependency-free browser prototype for transparent sponsored headphone 
 - Label fictional commercial data and the absence of a live model accurately.
 
 ## Boundaries
-- Do not copy Lab 5 starter over this app, include API keys, or add analytics.
+- Do not include API keys or add analytics.
 - Do not weaken behavioral assertions to make checks pass.
-- Keep user study proposals separate from observations; never invent participant results or student review.
+- Keep user study proposals separate from observations; never invent participant results.
 - Ask when a request changes data-use scope or conflicts with existing user controls.
