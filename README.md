@@ -1,6 +1,6 @@
 # Clear Choice
 
-README prose word count: 569 (excluding headings, code and setup commands; approximate whitespace count).
+README prose word count: 609 (excluding headings, code and setup commands; approximate whitespace count).
 
 An A2 prototype extending the A1 literature review on personalised advertising in AI conversations. It separates recognition of sponsorship, explanation of information use, and effective user control.
 
@@ -37,6 +37,12 @@ HTML/CSS, native JavaScript modules and browser memory only. The small parser re
 
 ## Development record and assistance
 See [development decisions and checks](docs/DEVELOPMENT.md), [verified course mapping](docs/COURSE_MAPPING.md), [response to A1 feedback](docs/FEEDBACK_RESPONSE.md), [browser verification](docs/BROWSER_TESTS.md), [actual exported session](docs/browser-session.json), [test output](docs/automated-test-output.txt), [trace excerpt](docs/trace_excerpt.md) and [handover](docs/HANDOVER.md).
+
+## AI assistance
+Specific uses of Codex included:
+
+- **JavaScript debugging and correction:** Codex assisted with identifying and correcting issues in parts of the JavaScript code and tests.
+- **Front-end styling and layout:** Codex assisted with HTML/CSS styling, interface layout and responsive presentation.
 
 The user supplied A1, Lab 4 and Lab 5 and accepted the advertising-transparency project direction. Codex generated the implementation, tests, figures, report draft and documentation. Codex inspected the lab source, checked literature, reviewed test failures and ran browser checks. The student has not yet independently reviewed this generated submission; no student testing or authorship of generated code is claimed. Student review and any subsequent changes should be recorded before submission.
 
