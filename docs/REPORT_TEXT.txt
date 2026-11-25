@@ -2,7 +2,7 @@ Clear Choice
 
 Transparent and controllable recommendations in a shopping assistant
 
-Abstract 181 words; main including headings 1064; total 1245.
+Abstract 181 words; main including headings 1090; total 1271.
 
 
 Abstract
@@ -45,16 +45,18 @@ Figure 1 separates the implemented browser pipeline, simulated commercial data a
 The three storyboards show recognition and inspection, withdrawal, and recovery from empty results. They depict browser-checked states. Under a £100 commuting request, enabling purpose use changes the sponsored product from Aster Lite to Metro Quiet; withdrawal restores Aster Lite. A changed product alone would not prove input exclusion, so engine tests separately check that disabled purpose cannot affect sponsored scores or explanation inputs.
 
 
-Development evidence and evaluation
+Development evidence and authorship
 
 
-Fifteen engine tests passed, covering opt-in, withdrawal, explanation consistency, ordinary-ranking invariance, ambiguous requests and budgets from £1 to £1,000. An initial failure came from a fixture that modified ordinary products while testing sponsored priorities; correcting the fixture retained the assertion. Browser checks confirmed consent, explanation, withdrawal, hiding, undo, empty results, clarification, export and reset. Actual outputs and a session export are retained in the development record.
+Student contribution and reuse. My A1 supplied the research framing; the literature and course concepts are reused as design evidence. During my £100 commuting walkthrough, I observed two ordinary recommendations and a separate advertisement. Enabling purpose use changed the advertised product; withdrawal restored it. I retained independent ordinary ranking because advertising influence on ordinary picks would become unclear and risk trust. This records my observation and decision, not a measured trust improvement.
 
-During my walkthrough, I observed two ordinary recommendations and a separate advertisement. Enabling purpose use changed the advertised product; withdrawing permission restored the original. I retained independent ordinary ranking because allowing ad settings to affect it would obscure commercial influence and risk trust. This motivates the design, rather than demonstrating increased trust. Codex assisted visual presentation and test checking; the README records development decisions and checks.
+Verification revision. An AI-assisted test initially changed campaign priorities on ordinary products as well as sponsored ones, causing an irrelevant equality failure. The fixture was restricted to sponsored products while retaining the assertion that ordinary results stay unchanged. This documents adaptation of assisted output, rather than weakening a check. All fifteen engine tests passed, covering consent, withdrawal, explanation inputs, ranking independence, ambiguous requests and budgets from £1 to £1,000.
 
-These checks establish deterministic behavior, not human comprehension. No participant study or increased trust is claimed. Future evaluation should compare label-only and input-specific explanations, ask which information affected selection, and check whether users can enact their preferred settings. Accuracy, completion time and effort should be measured together. This preserves A1’s bounded opportunity without presenting the prototype as an experimental answer to it.
+Presentation revisions. The diagram was corrected to show switches updating state directly rather than passing through language parsing. Figures 2–3 were added alongside storyboards so reviewers can compare actual sponsored products and settings before and after withdrawal. Codex assisted visual presentation and test checking; the student walkthrough above is distinguished from assisted verification.
 
-The absence of a live LLM is a scope compromise. A fluent assistant could accept more varied requests, but a separate explanation generator might invent targeting reasons. Bounded rules and shared metadata prioritise inspectability. A live-model extension would need checks for extraction errors, unauthorised state changes and faithful explanations. This version supports a walkthrough of short interactions; it cannot establish understanding during long, unpredictable shopping conversations.
+Checks and limits. Browser checks covered explanations, withdrawal, hiding, undo, empty results, clarification, export and reset. These establish functional behavior, not comprehension. A future study should compare labels alone with input-specific explanations, checking understanding and preference-consistent control while measuring accuracy, time and effort.
+
+Scope compromise. Bounded rules and shared result metadata make this prototype inspectable. A live LLM could handle more varied requests but might invent targeting reasons. That extension remains planned and would require checks for extraction errors, unauthorised changes and faithful explanations. No participant study or increased trust is claimed.
 
 
 References
