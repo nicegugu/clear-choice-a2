@@ -1,6 +1,6 @@
 # Clear Choice
 
-README prose word count: 589 (excluding headings, code and setup commands; approximate whitespace count).
+README prose word count: 741 (excluding headings, tables, code and setup commands; approximate whitespace count).
 
 An A2 prototype extending the A1 literature review on personalised advertising in AI conversations. It separates recognition of sponsorship, explanation of information use, and effective user control.
 
@@ -38,15 +38,31 @@ HTML/CSS, native JavaScript modules and browser memory only. The small parser re
 ## Development record and assistance
 The project developed from A1's distinction between sponsorship recognition, understanding personalisation and effective control. The prototype uses known fictional inputs and shared ranking metadata so these behaviors can be checked.
 
-Fifteen engine tests passed, covering opt-in, withdrawal, explanation-input consistency, ordinary-ranking invariance, ambiguous requests and budget limits. One initial failure was traced to a fixture that changed ordinary products while testing sponsor priorities; correcting the fixture retained the assertion. Browser checks confirmed explanation, withdrawal, hiding, undo, empty results, clarification, export and reset. These are functional checks, not a participant study or evidence of improved comprehension.
+Fifteen engine tests passed, covering opt-in, withdrawal, explanation-input consistency, ordinary-ranking invariance, ambiguous requests and budget limits. Browser checks confirmed explanation, withdrawal, hiding, undo, empty results, clarification, export and reset. These are functional checks, not a participant study or evidence of improved comprehension.
 
 Evidence: [actual exported session](docs/browser-session.json), [test output](docs/automated-test-output.txt), screenshots and diagrams under `docs/`, and [response to A1 feedback](docs/FEEDBACK_RESPONSE.md). The report includes verified course references. Significant decisions and checks are recorded here rather than in separate process documents.
+
+### Student walkthrough and design reflection
+The student reported observing two ordinary recommendations with a separate sponsored product below them after entering a £100 commuting request. Enabling purpose use changed the advertised product; withdrawing permission restored the original. Product names were not recorded in this personal check. The student chose to retain independent ordinary ranking because letting ad settings change ordinary recommendations would leave users uncertain whether advertising influenced them and could undermine trust. This is a personal observation and design rationale, not a participant-study result.
+
+### Design decisions and checks
+| Decision | Reason | Recorded check |
+| --- | --- | --- |
+| Separate ordinary and sponsored ranking | Make commercial influence recognisable and keep ordinary assistance independent of ad settings. | Hiding ads and changing sponsor priorities leave ordinary ordering unchanged. |
+| Keep budget as a hard cap | Withdrawing optional targeting must not permit unaffordable products. | Budget checks cover £1–£1,000 with purpose use on and off. |
+| Use a ten-point purpose bonus and fractional tie-breaks | Make a purpose match dominate secondary ranking factors in a small reproducible demo. | Fixed-catalogue tests check expected selections; weights are not claimed to be optimal. |
+| Generate explanations from execution metadata | Prevent reasons from naming information that the ranking did not use. | Explanation fields equal each result's recorded inputs. |
+
+Review/adaptation example: an initial test suggestion changed campaign priorities on ordinary products as well as sponsored products, so full-object equality failed for an irrelevant extra field. The fixture was narrowed to sponsored products; the assertion was retained. This is an observed correction in the development session, not a claim that every AI suggestion was accepted.
+
+Actual UI comparison: [purpose use enabled](docs/07-purpose-on.png) and [purpose use withdrawn](docs/08-purpose-withdrawn.png), captured from the running prototype. The report includes both states and the corrected control-flow diagram.
 
 ## AI assistance
 Specific uses of Codex included:
 
 - **JavaScript debugging and correction:** Codex assisted with identifying and correcting issues in parts of the JavaScript code and tests.
 - **Front-end styling and layout:** Codex assisted with HTML/CSS styling, interface layout and responsive presentation.
+- **Additional development assistance:** Codex also supported implementation drafts, tests, diagrams and report drafting. The fixture correction above provides a concrete example of checking and adapting generated output.
 
 All product facts are fictional.
 
