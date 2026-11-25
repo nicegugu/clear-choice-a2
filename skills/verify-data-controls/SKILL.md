@@ -11,7 +11,7 @@ description: Use when changing recommendation ranking, explanations, or controls
 4. Change the relevant code and add a behavioral check where the existing suite does not cover the invariant.
 5. Run `node --test tests/engine.test.mjs` and inspect the diff.
 6. In the browser, use a £100 commuting request; compare ads with purpose use off/on/off; inspect the explanation after each change.
-7. Record observed outcomes and verification limits in `docs/DEVELOPMENT.md`.
+7. Record observed outcomes and verification limits in the development record in `README.md`.
 
 ## Completion
 All engine tests pass; metadata and explanation exclude disabled inputs; browser selection reflects the current settings; ordinary results remain unchanged when ads are hidden.

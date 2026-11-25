@@ -1,6 +1,6 @@
 # Clear Choice
 
-README prose word count: 609 (excluding headings, code and setup commands; approximate whitespace count).
+README prose word count: 731 (excluding headings, code and setup commands; approximate whitespace count).
 
 An A2 prototype extending the A1 literature review on personalised advertising in AI conversations. It separates recognition of sponsorship, explanation of information use, and effective user control.
 
@@ -36,7 +36,11 @@ node --test tests/engine.test.mjs
 HTML/CSS, native JavaScript modules and browser memory only. The small parser recognises explicit budget/use-case phrases and listed control commands. Ranking and explanations share result metadata in `dist/engine.mjs`. Sponsorship determines eligibility for a separate placement; it never boosts ordinary products. The engine is inspectable and deterministic, not trained AI.
 
 ## Development record and assistance
-See [development decisions and checks](docs/DEVELOPMENT.md), [verified course mapping](docs/COURSE_MAPPING.md), [response to A1 feedback](docs/FEEDBACK_RESPONSE.md), [browser verification](docs/BROWSER_TESTS.md), [actual exported session](docs/browser-session.json), [test output](docs/automated-test-output.txt), [trace excerpt](docs/trace_excerpt.md) and [handover](docs/HANDOVER.md).
+The project developed from A1's distinction between sponsorship recognition, understanding personalisation and effective control. The prototype uses known fictional inputs and shared ranking metadata so these behaviors can be checked. Lab 4 informed source visibility and control patterns; Lab 5 informed bounded tasks, verification and review.
+
+Fifteen engine tests passed, covering opt-in, withdrawal, explanation-input consistency, ordinary-ranking invariance, ambiguous requests and budget limits. One initial failure was traced to a fixture that changed ordinary products while testing sponsor priorities; correcting the fixture retained the assertion. Browser checks confirmed explanation, withdrawal, hiding, undo, empty results, clarification, export and reset. These are functional checks, not a participant study or evidence of improved comprehension.
+
+Evidence: [actual exported session](docs/browser-session.json), [test output](docs/automated-test-output.txt), screenshots and diagrams under `docs/`, and [response to A1 feedback](docs/FEEDBACK_RESPONSE.md). The report includes verified course references. Significant decisions and checks are recorded here rather than in separate process documents.
 
 ## AI assistance
 Specific uses of Codex included:
