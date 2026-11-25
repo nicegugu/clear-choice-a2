@@ -2,7 +2,7 @@ Clear Choice
 
 Transparent and controllable recommendations in a shopping assistant
 
-Abstract 181 words; main including headings 1066; total 1247.
+Abstract 181 words; main including headings 1064; total 1245.
 
 
 Abstract
@@ -50,7 +50,7 @@ Development evidence and evaluation
 
 Fifteen engine tests passed, covering opt-in, withdrawal, explanation consistency, ordinary-ranking invariance, ambiguous requests and budgets from £1 to £1,000. An initial failure came from a fixture that modified ordinary products while testing sponsored priorities; correcting the fixture retained the assertion. Browser checks confirmed consent, explanation, withdrawal, hiding, undo, empty results, clarification, export and reset. Actual outputs and a session export are retained in the development record.
 
-During my walkthrough, I observed two ordinary recommendations and a separate advertisement. Enabling purpose use changed the advertised product; withdrawing permission restored the original. I retained independent ordinary ranking because allowing ad settings to affect it would obscure commercial influence and risk trust. This motivates the design, rather than demonstrating increased trust. Codex assisted implementation, tests, visual presentation and report drafting; the README records specific corrections and checks.
+During my walkthrough, I observed two ordinary recommendations and a separate advertisement. Enabling purpose use changed the advertised product; withdrawing permission restored the original. I retained independent ordinary ranking because allowing ad settings to affect it would obscure commercial influence and risk trust. This motivates the design, rather than demonstrating increased trust. Codex assisted visual presentation and test checking; the README records development decisions and checks.
 
 These checks establish deterministic behavior, not human comprehension. No participant study or increased trust is claimed. Future evaluation should compare label-only and input-specific explanations, ask which information affected selection, and check whether users can enact their preferred settings. Accuracy, completion time and effort should be measured together. This preserves A1’s bounded opportunity without presenting the prototype as an experimental answer to it.
 
